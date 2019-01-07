@@ -1,2 +1,2 @@
-# Hierarchical-DE-MCMC
-Hierarchical DE-MCMC estimation of STP parameters from a simulated neural network
+# Readme file
+just a read me file
