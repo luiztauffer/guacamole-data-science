@@ -9,7 +9,7 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
-#gem "jekyll", "~> 3.8.5"
+gem "jekyll", "~> 3.8.5"
 
 #gem "minima", "~> 2.0"
 gem "minimal-mistakes-jekyll"
@@ -25,7 +25,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-remote-theme" 
   gem 'jekyll-admin'    
-  gem "github-pages"    
+  #gem "github-pages"    
 end
 
 

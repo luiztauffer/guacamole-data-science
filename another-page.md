@@ -1,9 +1,7 @@
 ---
 title: Another page
-layout: collection
+layout: single
 permalink: /another-page/
-collection: posts
-entries_layout: grid
 classes: wide
 author_profile: true
 
