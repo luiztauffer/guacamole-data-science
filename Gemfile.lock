@@ -282,7 +282,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  activesupport (>= 4.1.11)
+  activesupport
   github-pages
   jekyll-admin
   jekyll-feed (~> 0.6)
