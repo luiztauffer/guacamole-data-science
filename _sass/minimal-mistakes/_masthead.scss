@@ -10,6 +10,7 @@
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
+  background-color: $footer-background-color;    
 
   &__inner-wrap {
     @include clearfix;
@@ -23,7 +24,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    font-family: $sans-serif-narrow;
+    font-family: $sans-serif-narrow;     
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -31,10 +32,11 @@
 
     nav {
       z-index: 10;
+      background-color: $footer-background-color;     
     }
 
     a {
-      text-decoration: none;
+      text-decoration: none;  
     }
   }
 }
@@ -47,6 +49,7 @@
   align-self: center;
   font-weight: bold;
   z-index: 20;
+  background-color: $footer-background-color;  
 }
 
 .masthead__menu {
@@ -54,8 +57,8 @@
   margin-left: 0;
   margin-right: 0;
   width: 100%;
-  clear: both;
-
+  clear: both;     
+    
   .site-nav {
     margin-left: 0;
 
@@ -69,13 +72,14 @@
     padding: 0;
     clear: both;
     list-style-type: none;
+    background-color: $footer-background-color;   
   }
 }
 
 .masthead__menu-item {
   display: block;
   list-style-type: none;
-  white-space: nowrap;
+  white-space: nowrap;         
 
   &--lg {
     padding-right: 2em;
