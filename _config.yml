@@ -13,20 +13,18 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on. You can create any custom variable you would like, and they will be accessible in the templates via {{ site.myvariable }}.
 title: Guacamole data science
 
-sidebar:
-  - title: Luiz Tauffer
-    image: /assets/images/bio-photo.jpg
-    text: "I am ..."
-  - title: "Another Title"
-    text: "More text here."  
-#    location : "Stockholm, SE" 
-#    links:
-#      - label: "GitHub"
-#        icon: "fab fa-fw fa-github"
-#        url: "https://github.com/luiztauffer"
-#      - label: "Linkedin"
-#        icon: "fab fa-fw fa-linkedin"
-#        url: "https://www.linkedin.com/in/luiz-tauffer"
+author:
+  name: "Luiz Tauffer"
+  avatar: /assets/images/bio-photo.jpg
+  bio: "On a quest for the perfect guacamole..."
+  location : "Stockholm, SE"     
+  links:
+     - label: "GitHub"
+       icon: "fab fa-fw fa-github"
+       url: "https://github.com/luiztauffer"
+     - label: "Linkedin"
+       icon: "fab fa-fw fa-linkedin"
+       url: "https://www.linkedin.com/in/luiz-tauffer"
 
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -50,8 +48,14 @@ highlighter: rouge
 #theme: minimal-mistakes-jekyll
 remote_theme: mmistakes/minimal-mistakes #@4.14.2
 minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
-teaser: /assets/images/500x300.png
+#teaser: /assets/images/500x300.png
 
+
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:path/
+    
 defaults:
   # _posts
   - scope:
@@ -59,10 +63,11 @@ defaults:
       type: posts
     values:
       read_time: false
-      author_profile: false
+      author_profile: true
       comments: true
       share: true
       related: true
+
 
 
 plugins:

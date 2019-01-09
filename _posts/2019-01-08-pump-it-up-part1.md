@@ -1,20 +1,28 @@
 ---
 layout: single
-title:  "Pump it up"
+title:  "Pump it up - part 1"
 date:   2019-01-08 
 categories: avocados
 
 class: wide
 
-excerpt: "A cool data science project"
+excerpt: "data visualization and preprocessing"
 
 header:
   overlay_image: /assets/images/pump-it-up-main.png
   overlay_filter: 0.5
-
+  teaser: /assets/images/pump-it-up-main.png
+  og_image: /assets/images/pump-it-up-main.png
+  
 ---
 
-# Load and visualize dataset
+# The Pump it up challenge
+
+**Pump it up** is a very interesting data science challenge available at [DrivenData](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/).
+
+
+# Load and visualize dataset# Load and visualize dataset
+
 
 How to load this dataset
 
@@ -257,7 +265,7 @@ X_train.head()
 ## Geographical visualization
 Let's now visualize the distribution of the water pumps throughout the country. It enriches our feeling for the problem at hand and might help the client (NGO, Government, etc...) to derive further insights on strategies.
 
-We'll download Tanzania's geographical data that's freely available at http://www.diva-gis.org/gdata and make use of *Administrative areas* and *Inland water* data (there's plenty of other data there like roads, population...). On top of these we will plot the *(longitude,latitude)* points from the water pumps dataset.
+We'll download Tanzania's geographical data that's freely available [here](http://www.diva-gis.org/gdata) and make use of *Administrative areas* and *Inland water* data (there's plenty of other data there like roads, population...). On top of these we will plot the *(longitude,latitude)* points from the water pumps dataset.
 
 To handle geographical data we're going to use [GeoPandas](http://geopandas.org/).
 

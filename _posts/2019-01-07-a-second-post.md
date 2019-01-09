@@ -10,7 +10,8 @@ header:
   overlay_image: /assets/images/avocados.jpg
   overlay_filter: 0.5
   caption: "Photo credit: [**Thought Catalog**](https://unsplash.com/photos/EMX1eJ1BcgU)"
-
+  teaser: /assets/images/avocados.jpg
+  og_image: /assets/images/avocados.jpg
 
 
 ---

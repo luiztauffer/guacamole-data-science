@@ -10,24 +10,8 @@ header:
   overlay_image: /assets/images/bananas.jpg
   overlay_filter: 0.5
   caption: "Photo credit: [**chuttersnap**](https://unsplash.com/photos/zQWuVlP_bNI)"
-
-image:
-  feature: /assets/images/bananas.jpg
-  thumb: /assets/images/bananas.jpg 
-  
-docs:
-  - title: Luiz Tauffer
-    image: /assets/images/bio-photo.jpg
-    text: "I am ..."
-  - title: "Another Title"
-    text: "More text here."  
-    text: "Stockholm, SE" 
-    children:
-          - title: "GitHub"
-            url: "https://github.com/luiztauffer"
-          - title: "Linkedin"
-            icon: "fab fa-fw fa-linkedin"
-            url: "https://www.linkedin.com/in/luiz-tauffer"
+  teaser: /assets/images/bananas.jpg
+  og_image: /assets/images/bananas.jpg
             
 ---
 Here I try to develop my first post.

@@ -1,8 +1,11 @@
 ---
-layout: single
 title: Another page
+layout: collection
 permalink: /another-page/
-sidebar_link: true
+collection: posts
+entries_layout: grid
+classes: wide
+author_profile: true
 
 ---
 
@@ -13,3 +16,5 @@ It doesn't need to be a post
 It can be whatever I want =)
 
 Notice I added a `permalink` to it, in order to keep always the same url and not get affected by the last date I updated the page.
+
+Trying to make a grid collection now:
