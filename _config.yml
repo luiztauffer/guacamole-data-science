@@ -10,27 +10,75 @@
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on. You can create any custom variable you would like, and they will be accessible in the templates via {{ site.myvariable }}.
 title: Guacamole data science
-email: your-email@example.com
+author:
+  name     : "Luiz Tauffer"
+  avatar   : "/assets/images/bio-photo.jpg"
+  bio      : "Who am I"
+  location : "Stockholm, SE" 
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/luiztauffer"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/luiz-tauffer"
+
+
+
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "guacamole-data-science" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+  
+#baseurl: "/guacamole-data-science" # the subpath of your site, e.g. /blog
+baseurl: ""
+# the base hostname & protocol for your site, e.g. http://example.com
+url: "https://luiztauffer.github.io" 
+github_username:  luiztauffer
 
 # Build settings
 markdown: kramdown
-theme: minima
-#theme: jekyll-theme-hydeout
-plugins:
-  - jekyll-feed
+highlighter: rouge
 
+#theme: minima
+#remote_theme: jekyll-theme-hydeout
+#remote_theme: fongandrew/hydeout
+
+theme: minimal-mistakes-jekyll
+#remote_theme: mmistakes/minimal-mistakes #@4.14.2
+minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+teaser: /assets/images/500x300.png
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      read_time: false
+      author_profile: true
+      comments: true
+      share: true
+      related: true
+
+
+plugins:
+#  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-admin
+# - github-pages
+
+# Enable or disable the site search
+search_enabled: true
+
+paginate: 5
+paginate_path: /page:num
+#sidebar_blog_link: '/blog'
+  
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

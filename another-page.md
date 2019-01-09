@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: single
 title: Another page
 permalink: /another-page/
+sidebar_link: true
 
 ---
 

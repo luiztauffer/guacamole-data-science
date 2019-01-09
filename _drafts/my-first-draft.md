@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "A draft example"
 date:   2019-01-07 17:59:13 +0100
 author: Luiz Tauffer

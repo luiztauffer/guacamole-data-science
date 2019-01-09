@@ -1,18 +1,48 @@
 ---
-layout: post
-title:  "My own Bananas post"
-date:   2019-01-07 17:59:13 +0100
-author: Luiz Tauffer
-categories: jekyll update
-permalink: /:categories/:year/:month/:day/:title.html
+layout: single
+date:   2019-01-07
+categories: bananas
 
+title:  "My own Bananas post"
+excerpt: "This post will make you go **BANANAS**"
+
+header:
+  overlay_image: /assets/images/bananas.jpg
+  overlay_filter: 0.5
+  caption: "Photo credit: [**chuttersnap**](https://unsplash.com/photos/zQWuVlP_bNI)"
+
+image:
+  feature: /assets/images/bananas.jpg
+  thumb: /assets/images/bananas.jpg 
+  
 ---
 Here I try to develop my first post.
 
-## This is a first Header
-After this big title now, we create a subsection.
+# This is a first Section
+And for that, a large bananas picture.
 
-# A subsection
+<figure>
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/banana1.jpg" alt="" width="500" />
+    <figcaption>Some bananas.</figcaption>
+</figure>
+
+And now, we create a subsection.
+
+## A subsection
+This subsection will get two pictures, like this: 
+<figure class="half">
+    <a href="/assets/images/banana1.jpg"><img src="/assets/images/banana1.jpg"></a>
+    <a href="/assets/images/banana2.jpg"><img src="/assets/images/banana2.jpg"></a>
+    <figcaption>More bananas is better than less bananas.</figcaption>
+</figure>
+
+
+<div class="notice--success">
+  <h4>Hooray!!</h4>
+  <p>We made it. Banana blog post.</p>
+</div>
+
+
 I can put in some Python code:
 
 {% highlight ruby %}
@@ -22,9 +52,3 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
