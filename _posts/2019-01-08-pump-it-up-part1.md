@@ -21,6 +21,16 @@ header:
 **Pump it up** is a very interesting data science challenge available at [DrivenData](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/).
 
 
+# Software and packages
+
+To reproduce these results you will need to have installed on your computer:
+
+1. **Python**, with [**Jupyter**](https://jupyter.org/) notebook or an [**IPython**](https://ipython.org/) running terminal,
+2. [**Numpy**](https://www.numpy.org/), [**Pandas**](https://pandas.pydata.org/) and [**Matplotlib]**(https://matplotlib.org/),
+3. [**GeoPandas**](http://geopandas.org/) for the geographical data manipulation and  
+4. [**Shapely**](https://shapely.readthedocs.io/en/latest/) for the geometric objects manipulation
+
+
 # Load and visualize dataset# Load and visualize dataset
 
 
