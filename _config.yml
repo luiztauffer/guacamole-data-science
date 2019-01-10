@@ -35,8 +35,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 #baseurl: "/guacamole-data-science" 
 # the base hostname & protocol for your site, e.g. http://example.com
 #url: "https://luiztauffer.github.io" 
-baseurl: "https://luiztauffer.github.io"
-url: "/guacamole-data-science"
+baseurl: ""
+url: ""
 
 github_username:  luiztauffer
 
