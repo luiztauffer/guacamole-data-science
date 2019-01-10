@@ -2,7 +2,12 @@
 layout: single
 title:  "Pump it up - part 2"
 date:   2019-01-08 
-tags: avocados
+
+categories: 
+    - projects
+tags: 
+    - machine learning
+    - random forests
 
 class: wide
 

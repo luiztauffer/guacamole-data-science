@@ -103,12 +103,12 @@ paginate_path: /page:num
 tag_archive:
   type: liquid
   path: /tags/
-#category_archive:
-#  type: liquid
-#  path: /categories/
+category_archive:
+  type: liquid
+  path: /categories/
 
-#include:
-#  - _pages
+include:
+  - _pages
   
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
