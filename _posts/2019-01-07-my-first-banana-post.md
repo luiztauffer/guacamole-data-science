@@ -14,7 +14,9 @@ header:
   og_image: /assets/images/bananas.jpg
             
 ---
-Here I try to develop my first post.
+Here I try to develop my first post. I'm gonna just add up a bunch of text, just to check things like justification, font style, font size, colors and all that stuff. Hopefully won't spend too much time doing it... who knows. But for now, just a bunch of text will do, also nice to just go writting a bunch of nonsense crap to relieve the tension, you know. blablablablabla whatever Im feeling hungry already, is it enough for a first paragraph maybe?? I say so, now a second on.
+
+A second paragraph to test ident at the beginning, for style purposes and because I want. Maybe a bit more of text for that and noooww I think its ok, back to css.
 
 # This is a first Section
 And for that, a large bananas picture.
