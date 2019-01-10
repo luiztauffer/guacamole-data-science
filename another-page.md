@@ -15,4 +15,19 @@ It can be whatever I want =)
 
 Notice I added a `permalink` to it, in order to keep always the same url and not get affected by the last date I updated the page.
 
-Trying to make a grid collection now:
+
+<div class="notice--primary">
+  <h4>Notice:</h4>
+  <p>Adding an attention remark.</p>
+</div>
+
+
+I can put in some Python code:
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}

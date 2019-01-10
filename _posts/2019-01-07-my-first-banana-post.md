@@ -29,8 +29,8 @@ And now, we create a subsection.
 ## A subsection
 This subsection will get two pictures, like this: 
 <figure class="half">
-    <a href="/assets/images/banana1.jpg"><img src="/assets/images/banana1.jpg"></a>
-    <a href="/assets/images/banana2.jpg"><img src="/assets/images/banana2.jpg"></a>
+    <a href="{{ site.url }}{{ site.baseurl }}/assets/images/banana1.jpg"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/banana1.jpg"></a>
+    <a href="{{ site.url }}{{ site.baseurl }}/assets/images/banana2.jpg"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/banana2.jpg"></a>
     <figcaption>More bananas is better than less bananas.</figcaption>
 </figure>
 
