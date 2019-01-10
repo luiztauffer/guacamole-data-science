@@ -18,7 +18,7 @@ header:
 
 # The Pump it up challenge
 
-**Pump it up** is a very interesting data science challenge available at [DrivenData](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/).
+**Pump it up** is a very interesting data science challenge available at [**DrivenData**](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/).
 
 
 # Software and packages
@@ -26,15 +26,14 @@ header:
 To reproduce these results you will need to have installed on your computer:
 
 1. **Python**, with [**Jupyter**](https://jupyter.org/) notebook or an [**IPython**](https://ipython.org/) running terminal,
-2. [**Numpy**](https://www.numpy.org/), [**Pandas**](https://pandas.pydata.org/) and [**Matplotlib]**(https://matplotlib.org/),
+2. [**Numpy**](https://www.numpy.org/), [**Pandas**](https://pandas.pydata.org/) and [**Matplotlib**](https://matplotlib.org/),
 3. [**GeoPandas**](http://geopandas.org/) for the geographical data manipulation and  
 4. [**Shapely**](https://shapely.readthedocs.io/en/latest/) for the geometric objects manipulation
 
 
-# Load and visualize dataset# Load and visualize dataset
+# Load and visualize dataset
 
-
-How to load this dataset
+First, go ahead and save the `training_set_labels.csv`, `training_set_values.csv` and `test_set_values.csv` files on your working directory.
 
 
 ```python

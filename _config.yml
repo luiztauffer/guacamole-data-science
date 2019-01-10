@@ -15,6 +15,7 @@ title: Guacamole data science
 
 author:
   name: "Luiz Tauffer"
+  home: "about"
   avatar: /assets/images/bio-photo.jpg
   bio: "On a quest for the perfect guacamole..."
   location : "Stockholm, SE"     
@@ -66,7 +67,7 @@ defaults:
       type: posts
     values:
       read_time: false
-      author_profile: true
+      author_profile: false
       comments: true
       share: true
       related: true
