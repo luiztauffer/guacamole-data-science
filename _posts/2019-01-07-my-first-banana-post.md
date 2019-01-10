@@ -1,7 +1,7 @@
 ---
 layout: single
 date:   2019-01-07
-categories: bananas
+tags: bananas
 
 title:  "My own Bananas post"
 excerpt: "This post will make you go **BANANAS**"

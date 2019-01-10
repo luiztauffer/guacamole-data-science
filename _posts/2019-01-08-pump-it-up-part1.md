@@ -2,7 +2,7 @@
 layout: single
 title:  "Pump it up - part 1"
 date:   2019-01-08 
-categories: avocados
+tags: avocados
 
 class: wide
 
