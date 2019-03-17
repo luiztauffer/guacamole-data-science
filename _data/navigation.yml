@@ -12,6 +12,20 @@ main:
   
   
 sidebar-cool-mammals:
+    - title: "Introduction"
+      url: /posts/2019-03-17-cool-mammals-project
+      children:
+            - title: "1. Image Object Detection"
+              url: /posts/2019-03-17-cool-mammals-project/#1
+            - title: "2. Data mining"
+              url: /posts/2019-03-17-cool-mammals-project/#2
+            - title: "3. Named Entity Recognition"
+              url: /posts/2019-03-17-cool-mammals-project/#3
+            - title: "4. Data Visualization"
+              url: /posts/2019-03-17-cool-mammals-project/#4
+            - title: "5. Deployment"
+              url: /posts/2019-03-17-cool-mammals-project/#5
+              
     - title: "part 1: object detection"
       url: /posts/2019-03-14-identifying-cool-mammals
       children:

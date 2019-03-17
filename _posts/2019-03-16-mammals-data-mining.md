@@ -29,8 +29,6 @@ header:
   
 sidebar:
   - title: "The Cool Mammals Project"
-    url: /posts/2019-03-17-cool-mammals-project.html
-    text: "A showcase project."
     nav: sidebar-cool-mammals
 
 ---  
