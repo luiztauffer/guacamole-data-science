@@ -28,9 +28,10 @@ header:
   
   
 sidebar:
-  - title: "Identifying mammals"
+  - title: "The Cool Mammals Project"
+    url: /posts/2019-03-17-cool-mammals-project
     text: "A showcase project."
-    nav: sidebar-identify-mammals
+    nav: sidebar-cool-mammals
 
 ---  
   
@@ -229,7 +230,7 @@ def mammals_countries(mammal):
             country_names.append(i[0].title())
             country_counts.append(i[1])
     country_names = np.array(country_names)
-    country_counts = np.array(country_counts)/npages
+    country_counts = 100*np.array(country_counts)/npages
     
     return country_names, country_counts
 ```
@@ -258,14 +259,15 @@ def bar_graph_mammals(mammal):
 
     data = [trace0]
     layout = dict( height=370, width=900, xaxis=dict(tickangle=-45), title=mammal+' presence',
+                   yaxis=dict( title='Occurrences on web pages [%]' ),
                    paper_bgcolor='rgba(0,0,0,0)',
                    plot_bgcolor='rgba(0,0,0,0)',
                    shapes=[{
                         'type': 'line',
                         'x0': 0,
-                        'y0': .1,
+                        'y0': 10,
                         'x1': len(country_names),
-                        'y1': .1,
+                        'y1': 10,
                         'line': {
                             'color': 'rgb(0, 0, 0)',
                             'width': 1,

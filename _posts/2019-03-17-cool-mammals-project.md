@@ -20,9 +20,9 @@ header:
   
   
 sidebar:
-  - title: "Identifying mammals"
+  - title: "The Cool Mammals Project"
     text: "A showcase project."
-    nav: sidebar-identify-mammals
+    nav: sidebar-cool-mammals
 
 ---  
 

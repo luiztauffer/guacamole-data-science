@@ -11,7 +11,7 @@ main:
   
   
   
-sidebar-identify-mammals:
+sidebar-cool-mammals:
     - title: "part 1: object detection"
       url: /posts/2019-03-14-identifying-cool-mammals
       children:

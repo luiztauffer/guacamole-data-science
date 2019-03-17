@@ -26,10 +26,10 @@ header:
   
   
 sidebar:
-  - title: "Identifying mammals"
+  - title: "The Cool Mammals Project"
     text: "A showcase project."
-    nav: sidebar-identify-mammals
-
+    nav: sidebar-cool-mammals
+    
 ---  
   
 Largely due to its demonstrated power in the field of computer vision, the interest in multilayer (deep) neural networks has boomed during the current decade, as reflected in the massive investments from big tech companies and the development of ever more efficient and complex models. In fact, the cutting edge architectures increased so much in size that one would give up altogether the plans of training those models if not in possession of expensive hardware configurations. Fortunately, together with the technical advances, we have been observing growing efforts in democratizing the access and usage of these models by means of open sourcing codes and transfer learning.
