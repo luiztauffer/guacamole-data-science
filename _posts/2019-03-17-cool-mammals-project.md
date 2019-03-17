@@ -13,10 +13,10 @@ tags:
     - data science
     
 header:
-  overlay_image: /assets/images/data_mining_mammals/map_sloth.jpg
+  overlay_image: /assets/images/cool_mammals_project/header.jpg
   overlay_filter: 0.4
-  teaser: /assets/images/data_mining_mammals/map_sloth.jpg
-  og_image: /assets/images/data_mining_mammals/map_sloth.jpg
+  teaser: /assets/images/cool_mammals_project/header.jpg
+  og_image: /assets/images/cool_mammals_project/header.jpg
   
   
 sidebar:
