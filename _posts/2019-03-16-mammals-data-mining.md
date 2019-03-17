@@ -235,7 +235,7 @@ def mammals_countries(mammal):
     return country_names, country_counts
 ```
 
-Now let's make a function to create a bar plots with the frequencies of occurrence for each country, as a percentage of the number of pages scraped. Set Plotly to work in the notebook mode, call the `mammals_countries()` function to load the data, format the layout and use `iplot(fig)` to print it on the notebook or `plot(fig, filename)` to save the plot in an `HTML` file.
+Now let's make a function to create a bar plots with the frequencies of occurrence for each country, as a percentage of the number of pages scraped. Set Plotly to work in the notebook mode, call the `mammals_countries()` function to load the data, format the layout and use `iplot(fig)` to print it on the notebook or `plot(fig, filename)` to save the plot as an `HTML` file.
 
 ```python
 from plotly import tools
@@ -284,7 +284,7 @@ bar_graph_mammals(mammal)
 <iframe name="iframe_bargraph" width="950px" height="420px" frameborder="0" scrolling="no" src="{{ site.url }}{{ site.baseurl }}/assets/images/data_mining_mammals/bar_graph_tiger.html">
 </iframe>
 
-
+Since we scraped all the google search results indiscriminately, some spurious results will happen (e.g. tigers in Barbados), but they will most likely have low counts and a simple threshold (~10%) might be enough to get rid of most of this noise.
 
 What's better than a nice graphic, right? I'll tell you what: a **map**! To create this choropleth map with the cute mammal icons, I used the [Folium](https://github.com/python-visualization/folium) library for python. Both Plotly and Folium make it easy to create gorgeous visual objects and export directly to html.
 
