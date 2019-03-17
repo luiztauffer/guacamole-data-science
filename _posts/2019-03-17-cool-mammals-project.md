@@ -28,26 +28,22 @@ sidebar:
 
 # The Cool Mammals Project
 
-This is a prototype project with the objective of summarizing, in a small space, the integrated use of diverse Machine Learning (ML) and Data Science (DS) methods. Good DS is usually seen as preceding good ML, that would be end-point of anything we might need. I try to illustrate how this relationship can be more fruitful if understood, instead, a an active cycle, with ML models also informing the formulation of meaningful datasets.
+This is a prototype project with the objective of summarizing, in a small space, the integrated use of diverse Machine Learning (ML) and Data Science (DS) methods. Good DS is usually seen as preceding good ML, which by its turn would be the end-point of anything we might need. However, this relationship could be more fruitful (in both practical and theoretical terms) if understood, instead, as an active cycle, with ML models also informing the construction and the interpretation of meaningful datasets. I try to illustrate what-I-mean-with-that with this cool mammals project.
 
-I exemplify how the abundance of amazing, freely-available resouces in data and algorithms, allows us to put these ideas into practice, by building up a project with cool mammals. 
+A first catalyst of this enterprise is my amazement with the abundance of high-quality, freely-available data, algorithms and documentation out there, which allows us to put so many ideas into practice! In nearly every DS or ML piece of expertise, from data gathering, manupulation and visualization to image and language processing, the cutting-edge technologies are made promptly accessible to anyone with interest in them. 
 
+In the spirit of contributing to this evergrowing, beautiful culture, and as a deliberate effort of self organization, I aim to describe the evolution of the project and to catalog it in the currently proper mediums: data gathering and code writting (stored on GitHub), deploying models for inference and informative visualization (as a web application) and the documentation of each project part in an instructional format (blog posts).
 
+In a nutshell, this project will cover:
 
-Beyond the theoretical  and implementational
-I consider this to be a deliberately focused effort (for me) to document several processes of a project's lifetime: data gathering and code writting (stored on GitHub), deploying models for inference and informative visualization (as a web application) and the documentation of the project steps in an instructional format (blog posts).
-
-In a nutshell:
-
-1. **Image Object Detection:** Receives a photo uploaded by the user and detects pre-trained types of mammals in it;
+1. **Object detection in images:** Receives a photo uploaded by the user and detects pre-trained types of mammals in it;
 2. **Data Mining:** Scrapes the web to automatically search for useful information about the detected mammals;
 3. **Named Entity Recognition:** Automatically identifies countries names strongly associated with the detected mammals;
 4. **Data Visualization:** Presents the results and insights in visually appealing ways.
+5. **App design and deployment:** Organizes all functionalities in an end-user web application.
 
 
-
-
-## Image Object Detection
+## Object Detection in images
 I make use of the [Tensorflow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection) and repurpose a pre-trained SSD Inception model a specific mammal species (a technique known as [transfer learning](https://www.youtube.com/watch?v=yofjFQddwHE)).
 List of available mammals: hedgehog, lion, wolf, fox, zebra, giraffe, bat, sloth, capybara, elephant, rhino, hippo, tiger, panda, kangaroo and koala.
 For each mammal I collected 100 photos for training and 10 for testing. The model trained on this limited dataset yields good results most of the times, but the number of examples proved to be too small for finer detection, specially for classes that look very similar, such as wolf and fox.
