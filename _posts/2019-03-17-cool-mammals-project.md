@@ -15,6 +15,7 @@ tags:
 header:
   overlay_image: /assets/images/cool_mammals_project/header.jpg
   overlay_filter: 0.4
+  caption: "Photo credit: [**Sebastian Molinares**](https://unsplash.com/@damebash)"
   teaser: /assets/images/cool_mammals_project/header.jpg
   og_image: /assets/images/cool_mammals_project/header.jpg
   
