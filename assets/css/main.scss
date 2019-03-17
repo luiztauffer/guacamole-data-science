@@ -4,5 +4,40 @@
 
 @charset "utf-8";
 
+// Luiz defined values ------------------------------
+// how to customize the CSS in the theme:
+// https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/#
+
+$background-color: #eeeeee;
+$footer-background-color: #0c301d;
+$border-color: #0c301d;
+$masthead-link-color: #fff;
+$masthead-link-color-hover: mix(#000, #fff, 25%) !default;
+
+$paragraph-indent: false;
+
+/* Modified from _variables.scss */
+/* syntax highlighting (base16) */
+/*
+$base00: #bcbcbc !default;
+$base01: #2e3c43 !default;
+$base02: #314549 !default;
+$base03: #546e7a !default;
+$base04: #b2ccd6 !default;
+$base05: #000000 !default;
+$base06: #000000 !default;
+$base07: #2e3c43 !default;
+$base08: #f07178 !default;
+$base09: #f78c6c !default;
+$base0a: #ffcb6b !default;
+$base0b: #c3e88d !default;
+$base0c: #89ddff !default;
+$base0d: #82aaff !default;
+$base0e: #c792ea !default;
+$base0f: #ff5370 !default;
+*/    
+//--------------------------------------------------
+
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials

@@ -1,6 +1,6 @@
 ---
-title: Another page
 layout: single
+title: Another page
 permalink: /another-page/
 classes: wide
 author_profile: true
@@ -13,7 +13,7 @@ It doesn't need to be a post
 
 It can be whatever I want =)
 
-Notice I added a `permalink` to it, in order to keep always the same url and not get affected by the last date I updated the page.
+Notice that I added a `permalink` to it, in order to keep always the same url and not get affected by the last date I updated the page.
 
 
 <div class="notice--primary">
@@ -22,7 +22,7 @@ Notice I added a `permalink` to it, in order to keep always the same url and not
 </div>
 
 
-I can put in some Python code:
+I can put in some highlighted code:
 
 {% highlight ruby %}
 def print_hi(name)
@@ -31,3 +31,10 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
+
+
+{% highlight wl linenos %}def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.{% endhighlight %}

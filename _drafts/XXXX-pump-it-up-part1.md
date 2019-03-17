@@ -316,21 +316,6 @@ fig1.savefig('map_lakes.png', dpi=600)
 
 
 
-```python
-##An attempt to plot smooth 2d distributions
-#fig_den, ax_den = plt.subplots(nrows=1, ncols=1, figsize=(7, 7), dpi= 120, facecolor='w', edgecolor='w')
-#
-#tza_adm.plot(linewidth=0.8, ax=ax_den, color='None', edgecolor='k')
-#
-#xedges = np.linspace(29,41,30)
-#yedges = np.linspace(-12,0,30)
-#Z, xedges, yedges = np.histogram2d(X_train.longitude, X_train.latitude, bins=(xedges,yedges), density=True)
-#ax_den.imshow(Z, origin='low', extent=[xedges[0], xedges[-1], yedges[0], yedges[-1]], 
-#              cmap='Blues', interpolation='bilinear')
-#ax_den.set_xlabel('Longitude'), ax_den.set_ylabel('Latitude')
-#
-```
-
 And we can also see the water pumps per region. Since regions are defined as polygons with *(longitude,latitude)* coordinates, we can search for water pump coordinates laying within each region of interest ([here's](https://stackoverflow.com/a/48105955) a nice solution for that).
 
 

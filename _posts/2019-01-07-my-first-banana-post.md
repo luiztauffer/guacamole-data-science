@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: single_post
 date:   2019-01-07
 tags: bananas
 

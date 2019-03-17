@@ -1,7 +1,5 @@
 # main links
 main:
-  # - title: "Quick-Start Guide"
-  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
    - title: "About"
      url: /about/
    - title: "Another page"
@@ -10,3 +8,36 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+  
+  
+  
+sidebar-identify-mammals:
+    - title: "part 1: object detection"
+      url: /posts/2019-03-14-identifying-cool-mammals
+      children:
+            - title: "1. Installing modules"
+              url: /posts/2019-03-14-identifying-cool-mammals/#1-installing-modules
+            - title: "2. Data acquisition and annotation"
+              url: /posts/2019-03-14-identifying-cool-mammals/#2-data-acquisition-and-annotation
+            - title: "3. Model training - transfer learning"
+              url: /posts/2019-03-14-identifying-cool-mammals/#3-model-training--transfer-learning
+            - title: "4. Export and use the model"
+              url: /posts/2019-03-14-identifying-cool-mammals/#4-export-and-use-the-model
+            - title: "5. Limitations, errors and what I learned from them"
+              url: /posts/2019-03-14-identifying-cool-mammals/#5-limitations-errors-and-what-i-learned-from-them
+            - title: "6. References and resources"
+              url: /posts/2019-03-14-identifying-cool-mammals/#6-references-and-resources
+        
+    - title: "part 2: data mining"
+      url: /posts/2019-03-16-mammals-data-mining
+      children:
+            - title: "1. Web scraping"
+              url: /posts/2019-03-16-mammals-data-mining/#1-web-scraping
+            - title: "2. Named Entity Recognition"
+              url: /posts/2019-03-16-mammals-data-mining/#2-named-entity-recognition
+            - title: "3. Visualization"
+              url: /posts/2019-03-16-mammals-data-mining/#3-visualization
+            - title: "4. Limitations, errors and what I learned from them"
+              url: /posts/2019-03-16-mammals-data-mining/#4-limitations-errors-and-what-i-learned-from-them
+            - title: "5. References and resources"
+              url: /posts/2019-03-16-mammals-data-mining/#5-references-and-resources

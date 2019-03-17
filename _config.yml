@@ -48,8 +48,8 @@ highlighter: rouge
 #remote_theme: jekyll-theme-hydeout
 #remote_theme: fongandrew/hydeout
 
-#theme: minimal-mistakes-jekyll
-remote_theme: mmistakes/minimal-mistakes@4.14.2
+theme: minimal-mistakes-jekyll
+#remote_theme: mmistakes/minimal-mistakes@4.15.2
 minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 #teaser: /assets/images/500x300.png
 
@@ -70,8 +70,8 @@ defaults:
       comments: true
       share: true
       related: true
-      toc: true
-      toc_sticky: true
+      toc: false    #right side-bar
+      toc_sticky: false
 
 
 
