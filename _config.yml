@@ -110,6 +110,9 @@ category_archive:
 include:
   - _pages
   
+# Google Analytics
+google_analytics: UA—136449513-1
+  
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
