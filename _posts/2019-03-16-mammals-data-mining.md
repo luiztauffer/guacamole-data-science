@@ -279,13 +279,17 @@ mammal = 'tiger'
 bar_graph_mammals(mammal)                
 ```
 
-<iframe name="iframe_bargraph" width="950px" height="420px" frameborder="0" scrolling="no" src="{{ site.url }}{{ site.baseurl }}/assets/images/data_mining_mammals/bar_graph_tiger.html">
+<iframe name="iframe_bargraph" width="100%" height="420px" frameborder="0" scrolling="yes" src="{{ site.url }}{{ site.baseurl }}/assets/images/data_mining_mammals/bar_graph_tiger.html">
 </iframe>
 
 Since we scraped all the google search results indiscriminately, some spurious results will happen (e.g. tigers in Barbados), but they will most likely have low counts and a simple threshold (~10%) might be enough to get rid of most of this noise.
 
 What's better than a nice graphic, right? I'll tell you what: a **map**! To create this choropleth map with the cute mammal icons, I used the [Folium](https://github.com/python-visualization/folium) library for python. Both Plotly and Folium make it easy to create gorgeous visual objects and export directly to html.
 
+
+<iframe name="iframe_bargraph" width="950px" height="420px" frameborder="0" scrolling="no" src="{{ site.url }}{{ site.baseurl }}/assets/images/data_mining_mammals/map_tiger.html">
+</iframe>
+<br>
 
 
 **Tip:** After producing your superb `HTML` graphics and maps, [here's](https://wkhtmltopdf.org/) a great tool to render them as a vector `PDF`, if you need to them as static figures. 
