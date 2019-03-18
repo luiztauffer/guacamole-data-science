@@ -27,7 +27,6 @@ sidebar:
 ---  
 
 # The Cool Mammals Project
-
 This is a prototype project with the objective of summarizing, in a small space, the integrated use of diverse Machine Learning (ML) and Data Science (DS) methods. Good DS is usually seen as preceding good ML, which by its turn would be the end-point of anything we might need. However, this relationship could be more fruitful (in both practical and theoretical terms) if understood, instead, as an active cycle, with ML models also informing the construction and the interpretation of meaningful datasets. I try to illustrate what-I-mean-with-that with this cool mammals project.
 
 A first catalyst of this enterprise is my amazement with the abundance of high-quality, freely-available data, algorithms and documentation out there, which empower us to put so many ideas into practice! In nearly every DS or ML piece of expertise, from data gathering, manupulation and visualization to image and language processing, the cutting-edge technologies are made promptly accessible to anyone with interest in them. 
@@ -60,4 +59,7 @@ Now I need to find countries names in this ocean of texts I just extracted. The 
 
 
 ## Data Visualization
-I used [Plotly](https://plot.ly) to generate the beautiful bar plot with the frequencies of occurrence for each country. What's better than a nice graphic, right? I'll tell you what: a **map**! To create this choropleth map with the cute mammal icons, I used the [Folium](https://github.com/python-visualization/folium) library for python. Both Plotly and Folium make it easy to create gorgeous visual objects and export directly to html
+I used [Plotly](https://plot.ly) to generate the beautiful bar plot with the frequencies of occurrence for each country. What's better than a nice graphic, right? I'll tell you what: a **map**! To create this choropleth map with the cute mammal icons, I used the [Folium](https://github.com/python-visualization/folium) library for python. Both Plotly and Folium make it easy to create gorgeous visual objects and export directly to html.
+
+
+## Web application
