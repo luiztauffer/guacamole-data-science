@@ -1,9 +1,13 @@
 # main links
 main:
+   - title: "Categories"
+     url: /categories/
+   - title: "Tags"
+     url: /tags/
    - title: "About"
      url: /about/
-   - title: "Another page"
-     url: /another-page/
+  # - title: "Another page"
+  #   url: /another-page/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
