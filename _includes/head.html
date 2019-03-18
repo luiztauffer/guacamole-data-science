@@ -1,6 +1,8 @@
 <meta charset="utf-8">
 
-{% include /analytics-providers/custom.html %}
+{% if jekyll.environment == 'production' %}
+    {% include /analytics-providers/custom.html %}
+{% endif %}
 
 {% include seo.html %}
 
