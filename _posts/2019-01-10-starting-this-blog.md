@@ -9,7 +9,7 @@ author_profile: false
 categories: 
     - blog
 tags: 
-    - writting
+    - writing
     - learning
 
 header:
