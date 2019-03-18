@@ -110,12 +110,14 @@ category_archive:
 include:
   - _pages
   
+  
 # Google Analytics
-analytics:
-  provider: "custom"
-  google:
-    tracking_id: "UA—136449513-1"
-    anonymize_ip: false # default
+#analytics:
+#  provider: "google-gtag"
+#  google:
+#    tracking_id: "UA—136449513-1"
+#    anonymize_ip: false # default
+  
   
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
