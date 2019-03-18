@@ -62,4 +62,4 @@ Now I need to find countries names in this ocean of texts I just extracted. The 
 I used [Plotly](https://plot.ly) to generate the beautiful bar plot with the frequencies of occurrence for each country. What's better than a nice graphic, right? I'll tell you what: a **map**! To create this choropleth map with the cute mammal icons, I used the [Folium](https://github.com/python-visualization/folium) library for python. Both Plotly and Folium make it easy to create gorgeous visual objects and export directly to html.
 
 
-## Web application
+## Deployment as a web application
