@@ -301,7 +301,7 @@ Let's check the results (click on a mammal):
 <iframe name="iframe_bar_graph0" width="100%" height="420px" frameborder="0" scrolling="yes" src="{{ site.url }}{{ site.baseurl }}/assets/images/data_mining_mammals/bar_graph_tiger.html">
 </iframe>
 
-Since we scraped all the google search results indiscriminately, some spurious results will happen (e.g. tigers in Barbados), but they will most likely have low counts and a simple threshold (e.g. 10%) might be enough to get rid of most of this noise.
+Since we scraped all the google search results indiscriminately, some spurious results will happen (e.g. tigers in Barbados), but they will most likely have low counts and a simple threshold (e.g. 10%) might be enough to get rid of most of this noise. 
 
 What's better than a nice graphic, right? I'll tell you what: a **map**! To create this choropleth map with the cute mammal icons, I used the [Folium](https://github.com/python-visualization/folium) library for python. 
 
@@ -332,11 +332,19 @@ What's better than a nice graphic, right? I'll tell you what: a **map**! To crea
 
 
 ## 4. Limitations, errors and what I learned from them
-Having your application indicating that giraffes live in Ecuador can be disappointing, but errors are not always so bad. We can learn form them! Here's a couple of interesting things I learned from the errors of this project:
+Having your application indicating that giraffes live in Ecuador can be disappointing, but errors are not always so bad. We can learn form them! Here's a couple of interesting things I learned from the limitations of this project:
 
-1. This was an interesting implementation of the [wisdom of the crowds](https://en.wikipedia.org/wiki/Wisdom_of_the_crowd) principle applied to web pages, but not without shortcomings. The first limitation is intrinsic to the world wide web: a disproportionally large chunk of the whole web content is produced in the United States, making it likely that the name "United States" will appear more often than others by chance. Making the search exclusively in english reinforces this bias. Also, because of zoos, certain countries might have their names appearing regularly together with some species, even if those species are not natural from those countries.
+1. This was an interesting implementation of the [wisdom of the crowds](https://en.wikipedia.org/wiki/Wisdom_of_the_crowd) principle applied to web pages, but not without shortcomings. The first limitation is intrinsic to the world wide web: a disproportionally large chunk of the whole web content is produced in the United States, making it likely that the name "United States" will appear more often than others by chance. Making the search exclusively in english reinforces this bias. 
 
-2. [Hippos in Colombia](https://www.vox.com/videos/2018/12/4/18125563/hippos-colombia-pablo-escobar), wtf?? Yes, they were brought in the 80s by Pablo Escobar for his personal zoo and now are roaming by the country.
+2. The method works well for niche specific species (kangaroos, zebras, sloths) but gets innacurate for widespread species (bats, foxes, hedgehogs), most likely due to the limited sample size of web pages and the language bias.
+
+3. Because of zoos, certain countries might have their names appearing regularly together with some species, even if those species are not natural from those countries.
+
+4. [Hippos in Colombia](https://www.vox.com/videos/2018/12/4/18125563/hippos-colombia-pablo-escobar), wtf?? Yes, they were brought in the 80s by Pablo Escobar for his personal zoo and now are roaming by the country.
+
+5. Sloths in India?? That's a typical result of our search for species being too uspecific. Sloth bears inhabits the southern Asia region and a more badasses than the Latin American sloths (like, [tiger-ass-kicking](https://www.youtube.com/watch?v=DV9ZGtQ8JZc) level badass)
+
+6. Australia scored significantly high in 15 of these 16 species! Or Australia has the most diverse zoos in the world, or it's definitely the weirdest fauna in the globe.
 
 
 ## 5. References and resources

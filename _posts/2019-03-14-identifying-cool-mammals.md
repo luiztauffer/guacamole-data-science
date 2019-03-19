@@ -164,11 +164,11 @@ Success! No risk of our nature-explorer robot to miss out bats or capyabaras any
 
 
 ## 5. Limitations, errors and what I learned from them
-Except for being eaten by bears, not every fail is a doom, though. We can learn form them! Here's a couple of interesting things I learned from the errors of this project:
+Except for being eaten by bears, not every fail is a doom, though. We can learn form them! Here's a couple of interesting things I learned from the limitations of this project:
 
-1. Sometimes the Object Detection model classifies bats as foxes. Well, guess what? In many parts of the world bats are colloquially named `flying foxes`! One of these places is the Pemba Island, in the coast of Tanzania, that has it’s own flying fox [species](https://www.iucnredlist.org/species/18768/22089205). That makes sense, some bats really look like foxes in their faces.
+1. 100 examples per class might be too little if you have similar classes, such as fox and wolf or bear and capybaras. For data driven utilities, the more, the better.
 
-2. 100 examples per class might be too little if you have similar classes, such as fox and wolf or bear and capybaras. For data driven utilities, the more, the better.
+2. Sometimes the Object Detection model classifies bats as foxes. Well, guess what? In many parts of the world bats are colloquially named `flying foxes`! One of these places is the Pemba Island, in the coast of Tanzania, that has it’s own flying fox [species](https://www.iucnredlist.org/species/18768/22089205). That makes sense, some bats really look like foxes in their faces.
 
 
 ## 6. References and resources
