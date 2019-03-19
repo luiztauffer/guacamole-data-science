@@ -39,7 +39,8 @@ In a nutshell, this project will cover:
 2. **Data Mining:** Unsupervised algorithm to form a corpus-based knowledge representation, Named Entity Recognition for identification of countries names and data visualization with clean and informative graphics;
 3. **Web application:** Organizes and deploys all functionalities in an end-user web application.
 
-**Important:** This project serves as a proof of concept for the idea of integrating recurrently ML and DS methods in a single application, and hopefully it will motivate independent pratictioners to implement their own ideas. The resources in it should not be used commercially, but only for educational purposes. 
+**Important:** This project serves as a proof of concept for the idea of integrating recurrently ML and DS methods in a single application, and hopefully it will motivate independent pratictioners to implement their own ideas. The resources in it should not be used commercially, but only for educational purposes.
+{: .notice--primary}
 
 
 ## 1. Object Detection
