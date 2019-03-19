@@ -44,6 +44,8 @@ In a nutshell, this project will cover:
 
 
 ## 1. Object Detection
+[**GitHub repository**](https://github.com/luiztauffer/cool-mammals-object-detection/)
+
 I start describing how to make use of advanced image processing models for a personal project. The chosen library is the [Tensorflow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection), from which I repurpose a pre-trained SSD Inception model to identify specific mammal species (a technique known as [transfer learning](https://en.wikipedia.org/wiki/Transfer_learning)).
 
 For each mammal species I collected 100 photos for training and 10 for testing. The model trained on this limited dataset yields good results most of the times, but the number of examples proved to be too small for finer detection, specially for classes that look very similar, such as wolf and fox.
@@ -52,12 +54,13 @@ List of mammal species: bat, capybara, elephant, fox, giraffe, hedgehog, hippo, 
 
 
 ## 2. Data Mining
-Once the model identified which mammals are present in the photo, how can I bring up extra useful information to the user of my system? I propose a solution that is unsupervised and scalable: I collect the text in a large number of web pages related to a specific mammal and estimate the countries where it is most likely to be found by counting the frequency of occurrence of countries names in those pages. First, I used [MarioVilas' googlesearch](https://github.com/MarioVilas/googlesearch) to get me hundreds of google results to entries such as "giraffe animal countries". Next, I scrape this huge set of links with [Scrapy](https://scrapy.org)
-This was an interesting implementation of the [wisdom of the crowds](https://en.wikipedia.org/wiki/Wisdom_of_the_crowd) principle applied to web pages, but not without shortcomings. The first limitation is intrinsic to the world wide web: a disproportionally large chunk of the whole web content is produced in the United States, making it likely that the name "United States" will appear more often than others by chance. Making the search exclusively in english reinforces this bias. Also, because of zoos, certain countries might have their names appearing regularly together with some species, even if those species are not natural from those countries.
+[**GitHub repository**](https://github.com/luiztauffer/cool-mammals-data-mining)
 
-Now I need to find countries names in this ocean of texts I just extracted. The simplest way to do so would be to sweep the whole article strings looking for exact matches of each country's name. Simple and efficient... but boring! Instead, I decided to use the super cool [SpaCy](https://spacy.io) library available for python, it has ready to use NER functions and works really fast.
+Once the model identified which mammals are present in the photo, how can I bring up extra useful information to the user of my system? I propose a solution that is unsupervised and scalable: I collect the text in a large number of web pages related to a specific mammal and estimate the countries where it is most likely to be found by counting the frequency of occurrence of countries names in those pages. To fetch the texts I use [Scrapy](https://scrapy.org) and to identify countries names I use [SpaCy](https://spacy.io).
 
-I used [Plotly](https://plot.ly) to generate the beautiful bar plot with the frequencies of occurrence for each country. What's better than a nice graphic, right? I'll tell you what: a **map**! To create this choropleth map with the cute mammal icons, I used the [Folium](https://github.com/python-visualization/folium) library for python. Both Plotly and Folium make it easy to create gorgeous visual objects and export directly to html.
+I present the resulting dataset in visually engaging and informative ways. I use [Plotly](https://plot.ly) to generate a clean bar plot with the frequencies of occurrence for each country and [Folium](https://github.com/python-visualization/folium) to create a choropleth map with the cute mammal icons.
+
+A valuable concept touched in this section is the [Corpus-Based Knowledge Representation](https://pdfs.semanticscholar.org/274e/dc1371f321628b4d88e8f7bf7756bc39ff9c.pdf). By implementing an example, it is possible to observe at first-hand some advantages and disavantages of this idea. I discuss the biases and limitations of my particular implementation.
 
 
 ## 3. Web application
