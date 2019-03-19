@@ -402,7 +402,7 @@ Let's check the results (click on a mammal):
 </iframe>
 <br>
 
-The cute mammal icons were taken from [Flaticon](https://www.flaticon.com/).
+The cute mammal icons were taken from [Flaticon](https://www.flaticon.com/). And that's it! We finished the visualization for the unsupervised data mining stage of the project. If we look carefully, we will obeserve that the results are not 100% accurate, but most of the times they get pretty close to what we would expect to see in terms of species distributions by regions of the world. In the next part, we will create a web application that joins the object identification functionality from the last session to the data mining and visualization results of this session.
 
 **Tip:** Both Plotly and Folium make it easy to create beautiful visuals and export directly to html. After producing your superb `HTML` graphics and maps, [here's](https://wkhtmltopdf.org/) a great tool to render them as a vector `PDF`, if you need to use them as static figures. 
 
@@ -410,7 +410,7 @@ The cute mammal icons were taken from [Flaticon](https://www.flaticon.com/).
 ## 4. Limitations, errors and what I learned from them
 Having your application indicating that giraffes live in Ecuador can be disappointing, but errors are not always so bad. We can learn form them! Here's a couple of interesting things I learned from the limitations of this project:
 
-1. This was an interesting implementation of the [wisdom of the crowds](https://en.wikipedia.org/wiki/Wisdom_of_the_crowd) principle applied to web pages, but not without shortcomings. The first limitation is intrinsic to the world wide web: a disproportionally large chunk of the whole web content is produced in the United States, making it likely that the name "United States" will appear more often than others by chance. Making the search exclusively in english reinforces this bias. 
+1. This was an interesting implementation of the wisdom of the crowds principle applied to web pages, but not without shortcomings. The first limitation is intrinsic to the world wide web: a disproportionally large chunk of the whole web content is produced in the United States, making it likely that the name "United States" will appear more often than others by chance. Making the search exclusively in english reinforces this bias. 
 
 2. The method works well for niche specific species (kangaroos, zebras, sloths) but gets innacurate for widespread species (bats, foxes, hedgehogs), most likely due to the limited sample size of web pages and the language bias.
 
@@ -432,4 +432,15 @@ Having your application indicating that giraffes live in Ecuador can be disappoi
 6. [Google](https://www.google.com)
 7. [MarioVilas' googlesearch](https://github.com/MarioVilas/googlesearch)
 8. [Google's Terms of Service](https://support.google.com/webmasters/answer/66357)
-9. [HTML to PDF tool](https://wkhtmltopdf.org/)
+9. [Scrapy](https://scrapy.org/) 
+10. [Scrapy tutorial](https://www.youtube.com/playlist?list=PLE50-dh6JzC6dHxpAno-a6W7QpWdAFN20)
+11. [SpaCy](https://spacy.io) 
+12. [SpaCy language models](https://spacy.io/usage/models)
+13. [Named Entity Recognition](https://en.wikipedia.org/wiki/Named-entity_recognition)
+14. [Jupyter notebook](https://jupyter.org/)
+15. [Plotly](https://plot.ly)
+16. [Folium](https://github.com/python-visualization/folium)
+17. [Cute icons from Flaticon](https://www.flaticon.com/)
+18. [HTML to PDF conversion tool](https://wkhtmltopdf.org/)
+19. [Hippos in Colombia](https://www.vox.com/videos/2018/12/4/18125563/hippos-colombia-pablo-escobar)
+20. [Badass sloth bear](https://www.youtube.com/watch?v=DV9ZGtQ8JZc)
