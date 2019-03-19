@@ -35,14 +35,14 @@ In the spirit of contributing to this evergrowing, beautiful culture, and as a d
 
 In a nutshell, this project will cover:
 
-1. **Object detection in images:** Train a model to detect pre-defined mammal species in images and use it for inference in new images;
+1. **Object detection:** Train a model to detect pre-defined mammal species in images and use it for inference in new images;
 2. **Data Mining:** Unsupervised algorithm to form a corpus-based knowledge representation, Named Entity Recognition for identification of countries names and data visualization with clean and informative graphics;
-3. **App design and deployment:** Organizes all functionalities in an end-user web application.
+3. **Web application:** Organizes and deploys all functionalities in an end-user web application.
 
 **Important:** This project serves as a proof of concept for the idea of integrating recurrently ML and DS methods in a single application, and hopefully it will motivate independent pratictioners to implement their own ideas. The resources in it should not be used commercially, but only for educational purposes. 
 
 
-## 1. Object Detection in images
+## 1. Object Detection
 I start describing how to make use of advanced image processing models for a personal project. The chosen library is the [Tensorflow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection), from which I repurpose a pre-trained SSD Inception model to identify specific mammal species (a technique known as [transfer learning](https://en.wikipedia.org/wiki/Transfer_learning)).
 
 For each mammal species I collected 100 photos for training and 10 for testing. The model trained on this limited dataset yields good results most of the times, but the number of examples proved to be too small for finer detection, specially for classes that look very similar, such as wolf and fox.
@@ -59,7 +59,7 @@ Now I need to find countries names in this ocean of texts I just extracted. The 
 I used [Plotly](https://plot.ly) to generate the beautiful bar plot with the frequencies of occurrence for each country. What's better than a nice graphic, right? I'll tell you what: a **map**! To create this choropleth map with the cute mammal icons, I used the [Folium](https://github.com/python-visualization/folium) library for python. Both Plotly and Folium make it easy to create gorgeous visual objects and export directly to html.
 
 
-## 3. Deployment as a web application
+## 3. Web application
 
 
 
