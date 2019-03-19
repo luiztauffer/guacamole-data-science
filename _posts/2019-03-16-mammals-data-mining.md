@@ -327,6 +327,7 @@ What's better than a nice graphic, right? I'll tell you what: a **map**! To crea
 </iframe>
 <br>
 
+The cute mammal icons were taken from [Flaticon](https://www.flaticon.com/).
 
 **Tip:** Both Plotly and Folium make it easy to create beautiful visuals and export directly to html. After producing your superb `HTML` graphics and maps, [here's](https://wkhtmltopdf.org/) a great tool to render them as a vector `PDF`, if you need to use them as static figures. 
 
