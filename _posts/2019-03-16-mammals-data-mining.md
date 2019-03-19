@@ -279,20 +279,56 @@ mammal = 'tiger'
 bar_graph_mammals(mammal)                
 ```
 
-<iframe name="iframe_bargraph" width="100%" height="420px" frameborder="0" scrolling="yes" src="{{ site.url }}{{ site.baseurl }}/assets/images/data_mining_mammals/bar_graph_tiger.html">
+Let's check the results (click on a mammal):
+
+<a onclick="javascript: setGraph('bat');" class="btn btn--inverse">Bat</a>
+<a onclick="javascript: setGraph('capybara');" class="btn btn--inverse">Capybara</a>
+<a onclick="javascript: setGraph('elephant');" class="btn btn--inverse">Elephant</a>
+<a onclick="javascript: setGraph('fox');" class="btn btn--inverse">Fox</a>
+<a onclick="javascript: setGraph('giraffe');" class="btn btn--inverse">Giraffe</a>
+<a onclick="javascript: setGraph('hedgehog');" class="btn btn--inverse">Hedgehog</a>
+<a onclick="javascript: setGraph('hippo');" class="btn btn--inverse">Hippo</a>
+<a onclick="javascript: setGraph('kangaroo');" class="btn btn--inverse">Kangaroo</a>
+<a onclick="javascript: setGraph('koala');" class="btn btn--inverse">Koala</a>
+<a onclick="javascript: setGraph('lion');" class="btn btn--inverse">Lion</a>
+<a onclick="javascript: setGraph('panda');" class="btn btn--inverse">Panda</a>
+<a onclick="javascript: setGraph('rhino');" class="btn btn--inverse">Rhino</a>
+<a onclick="javascript: setGraph('sloth');" class="btn btn--inverse">Sloth</a>
+<a onclick="javascript: setGraph('tiger');" class="btn btn--inverse">Tiger</a>
+<a onclick="javascript: setGraph('wolf');" class="btn btn--inverse">Wolf</a>
+<a onclick="javascript: setGraph('zebra');" class="btn btn--inverse">Zebra</a>
+
+<iframe name="iframe_bar_graph0" width="100%" height="420px" frameborder="0" scrolling="yes" src="{{ site.url }}{{ site.baseurl }}/assets/images/data_mining_mammals/bar_graph_tiger.html">
 </iframe>
 
-Since we scraped all the google search results indiscriminately, some spurious results will happen (e.g. tigers in Barbados), but they will most likely have low counts and a simple threshold (~10%) might be enough to get rid of most of this noise.
+Since we scraped all the google search results indiscriminately, some spurious results will happen (e.g. tigers in Barbados), but they will most likely have low counts and a simple threshold (e.g. 10%) might be enough to get rid of most of this noise.
 
-What's better than a nice graphic, right? I'll tell you what: a **map**! To create this choropleth map with the cute mammal icons, I used the [Folium](https://github.com/python-visualization/folium) library for python. Both Plotly and Folium make it easy to create gorgeous visual objects and export directly to html.
+What's better than a nice graphic, right? I'll tell you what: a **map**! To create this choropleth map with the cute mammal icons, I used the [Folium](https://github.com/python-visualization/folium) library for python. 
 
 
-<iframe name="iframe_bargraph" width="950px" height="420px" frameborder="0" scrolling="no" src="{{ site.url }}{{ site.baseurl }}/assets/images/data_mining_mammals/map_tiger.html">
+<a onclick="javascript: setMap('bat');" class="btn btn--inverse">Bat</a>
+<a onclick="javascript: setMap('capybara');" class="btn btn--inverse">Capybara</a>
+<a onclick="javascript: setMap('elephant');" class="btn btn--inverse">Elephant</a>
+<a onclick="javascript: setMap('fox');" class="btn btn--inverse">Fox</a>
+<a onclick="javascript: setMap('giraffe');" class="btn btn--inverse">Giraffe</a>
+<a onclick="javascript: setMap('hedgehog');" class="btn btn--inverse">Hedgehog</a>
+<a onclick="javascript: setMap('hippo');" class="btn btn--inverse">Hippo</a>
+<a onclick="javascript: setMap('kangaroo');" class="btn btn--inverse">Kangaroo</a>
+<a onclick="javascript: setMap('koala');" class="btn btn--inverse">Koala</a>
+<a onclick="javascript: setMap('lion');" class="btn btn--inverse">Lion</a>
+<a onclick="javascript: setMap('panda');" class="btn btn--inverse">Panda</a>
+<a onclick="javascript: setMap('rhino');" class="btn btn--inverse">Rhino</a>
+<a onclick="javascript: setMap('sloth');" class="btn btn--inverse">Sloth</a>
+<a onclick="javascript: setMap('tiger');" class="btn btn--inverse">Tiger</a>
+<a onclick="javascript: setMap('wolf');" class="btn btn--inverse">Wolf</a>
+<a onclick="javascript: setMap('zebra');" class="btn btn--inverse">Zebra</a>
+
+<iframe name="iframe_map0" width="950px" height="420px" frameborder="0" scrolling="no" src="{{ site.url }}{{ site.baseurl }}/assets/images/data_mining_mammals/map_tiger.html">
 </iframe>
 <br>
 
 
-**Tip:** After producing your superb `HTML` graphics and maps, [here's](https://wkhtmltopdf.org/) a great tool to render them as a vector `PDF`, if you need to them as static figures. 
+**Tip:** Both Plotly and Folium make it easy to create beautiful visuals and export directly to html. After producing your superb `HTML` graphics and maps, [here's](https://wkhtmltopdf.org/) a great tool to render them as a vector `PDF`, if you need to use them as static figures. 
 
 
 ## 4. Limitations, errors and what I learned from them
