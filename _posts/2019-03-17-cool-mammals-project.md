@@ -65,8 +65,16 @@ A valuable concept touched in this section is the [Corpus-Based Knowledge Repres
 
 ## 3. Web application
 
+Finally, I demonstrate how to pack all those methods an a single web application built in [Django](https://www.djangoproject.com). I show how it can be served locally and made available to an external users with [Ngrok](https://ngrok.com).
 
 
 ## 4. References and resources
 1. [Tensorflow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection)
 2. [Transfer learning](https://en.wikipedia.org/wiki/Transfer_learning)
+3. [Scrapy](https://scrapy.org) 
+4. [SpaCy](https://spacy.io)
+5. [Plotly](https://plot.ly)
+6. [Folium](https://github.com/python-visualization/folium)
+7. [Corpus-Based Knowledge Representation](https://pdfs.semanticscholar.org/274e/dc1371f321628b4d88e8f7bf7756bc39ff9c.pdf)
+8. [Django](https://www.djangoproject.com)
+9. [Ngrok](https://ngrok.com)
