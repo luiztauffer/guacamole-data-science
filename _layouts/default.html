@@ -12,7 +12,8 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
-      
+    
+    <!--------- Active button for Cool Mammals Data Mining page ----------->
     <script type="text/javascript">
         function setGraph(mammal) {
                 document.querySelector('iframe[name="iframe_bar_graph0"]').src = "{{ site.url }}{{ site.baseurl }}/assets/images/data_mining_mammals/bar_graph_"+mammal+".html";
@@ -21,6 +22,7 @@
                 document.querySelector('iframe[name="iframe_map0"]').src = "{{ site.url }}{{ site.baseurl }}/assets/images/data_mining_mammals/map_"+mammal+".html";
         }
     </script>
+    <!--------------------------------------------------------------------->
       
   </head>
 

@@ -51,7 +51,7 @@ As an extra, I think blogging might help me not only to fortify my machine learn
 
 
 
-## 4. Writting practice 
+## 4. Writing practice 
 
 Being a non-native English speaker, properly writing meaningful content is a perpetual, arduous process. Even worse for those who, like me, have stuck their feet deep into the mud puddle of [technical/scientific](https://en.wikipedia.org/wiki/Scientific_writing) writing, where precision and [parsimony](https://en.wikipedia.org/wiki/Occam%27s_razor) are highly appreciated, to the detriment of creativity, pedagogy and subjective expression. There are just too many things that are better said in non-academic terms and writing a blog might be a good exercise for me in those cases.
 
