@@ -47,7 +47,7 @@ This [corpus-based](https://pdfs.semanticscholar.org/274e/dc1371f321628b4d88e8f7
 
 ## 1. Web scraping
 How to gather so many web pages with information about the mammal species? No one better 
-than Mr. know-it-all [Google](https://www.google.com) to give it a hand! But now, how to do it **automatically**, without the need of a sapiens mammal clicking work? I used the handy [MarioVilas' googlesearch](https://github.com/MarioVilas/googlesearch) to get me the first 100 google results to entries such as "giraffe animal countries". Keep in mind that automated querying is against Google's [Terms of Service](https://support.google.com/webmasters/answer/66357) and abusing it might get your IP banned, so be polite! The amount of links we're gathering here is small and we only need to make it once, so keep the limit of one request per minute and you will be (hopefully) safe. 
+than Mr. know-it-all [Google](https://www.google.com) to give it a hand! But now, how to do it **automatically**, without the need of a sapiens mammal clicking work? I used the handy [MarioVilas' googlesearch](https://github.com/MarioVilas/googlesearch) to get me the first 200 google results to entries such as "giraffe animal countries". Keep in mind that automated querying is against Google's [Terms of Service](https://support.google.com/webmasters/answer/66357) and abusing it might get your IP banned, so be polite! The amount of links we're gathering here is small and we only need to make it once, so keep the limit of one request per minute and you will be (hopefully) safe. 
     
 To install the python packages is as easy as `pip install google`. Here's an usage example that will create a `CSV` file with all the page links for every mammal:
 
@@ -243,9 +243,12 @@ from plotly.offline import iplot, init_notebook_mode
 
 init_notebook_mode(connected=True)
 
-def bar_graph_mammals(mammal): 
+def bar_graph_mammals(mammal, cnt_threshold=5): 
     #Get countries counts
     country_names, country_counts = mammals_countries(mammal)
+    if len(country_names) > 30:
+        country_names = country_names[0:30]
+        country_counts = country_counts[0:30]
     
     #Make Plotly graphics
     trace0 = go.Bar(
@@ -255,7 +258,8 @@ def bar_graph_mammals(mammal):
                      line=dict(color='rgb(8,48,107)', width=1.5) ),
         opacity=0.6 )
 
-    data = [trace0]
+    data = [trace0]   
+        
     layout = dict( height=370, width=900, xaxis=dict(tickangle=-45), title=mammal+' presence',
                    yaxis=dict( title='Occurrences on web pages [%]' ),
                    paper_bgcolor='rgba(0,0,0,0)',
@@ -263,20 +267,28 @@ def bar_graph_mammals(mammal):
                    shapes=[{
                         'type': 'line',
                         'x0': 0,
-                        'y0': 10,
+                        'y0': cnt_threshold,
                         'x1': len(country_names),
-                        'y1': 10,
+                        'y1': cnt_threshold,
                         'line': {
                             'color': 'rgb(0, 0, 0)',
                             'width': 1,
                             'dash': 'dot'}}] )
 
     fig = go.Figure(data=data, layout=layout)
+    
+    #Display bar plots
     iplot(fig)
-    #plot(fig, filename='media/bar_graph_'+mammal+'.html')
+    
+    #Save bar plots
+    plot(fig, filename='media/bar_graph_'+mammal+'.html')
+    
+    return country_names, country_counts
 
-mammal = 'tiger'                
-bar_graph_mammals(mammal)                
+
+mammal = 'tiger'    
+cnt_threshold = 10
+country_names, country_counts = bar_graph_mammals(mammal, cnt_threshold=cnt_threshold)
 ```
 
 Let's check the results (click on a mammal):
@@ -303,8 +315,71 @@ Let's check the results (click on a mammal):
 
 Since we scraped all the google search results indiscriminately, some spurious results will happen (e.g. tigers in Barbados), but they will most likely have low counts and a simple threshold (e.g. 10%) might be enough to get rid of most of this noise. 
 
-What's better than a nice graphic, right? I'll tell you what: a **map**! To create this choropleth map with the cute mammal icons, I used the [Folium](https://github.com/python-visualization/folium) library for python. 
+What's better than a nice graphic to tell a story, right? I'll tell you what: a **map**! Next step we will create an informative map related to each mammal species. A good map style for that is the choropleth, which paints each geographical region with different color intensities. Creating interactive and beautiful maps is very easy with the [Folium](https://github.com/python-visualization/folium) library for python. To install it, run `pip install folium`. Now, in our notebook:
 
+```python
+import folium
+
+#Calculate centroids
+def centeroidnp(arr):
+    length = arr.shape[0]
+    sum_x = np.sum(arr[:, 0])
+    sum_y = np.sum(arr[:, 1])
+    return np.array([sum_y/length, sum_x/length])
+    
+# function to generate map plots
+def map_mammals(mammal, cnt_threshold, country_names, country_counts): 
+    # make an empty map
+    my_map = folium.Map(location=[20, 0], tiles="Mapbox Bright", zoom_start=2)
+    #my_map = folium.Map(location=[20, 0], tiles="Stamen Terrain", zoom_start=2)
+
+    #Countries layer
+    countries_geo = 'world-countries.json'
+    countries_df = pd.read_json(countries_geo)
+    for index, row in countries_df.iterrows():
+        countries_df.at[index,'country'] = row['features']['properties']['name']
+
+    chosen_indexes = country_counts > cnt_threshold
+    chosen_data = pd.DataFrame(data=country_names[chosen_indexes], columns=['country'])
+    chosen_data['quantity'] = country_counts[chosen_indexes]
+
+    # Add the color for the chloropleth
+    folium.Choropleth(
+        geo_data=countries_geo,
+        name='choropleth',
+        data=chosen_data,
+        columns=['country', 'quantity'],
+        key_on='properties.name', #'feature.id',
+        fill_color='OrRd',
+        fill_opacity=0.7,
+        line_opacity=0.2,
+        nan_fill_color ='#ffffff00',
+        legend_name='Estimated presence of '+mammal+'s',
+    ).add_to(my_map)
+
+    #create mammal markers and add them to map object 
+    centroids = pd.read_csv('centroids.csv')  #centroid marks to print icons    
+    for index, row in chosen_data.iterrows():
+        #create icons from images
+        icon = folium.features.CustomIcon('./icons/icon_'+mammal+'.png', icon_size=(25,25))
+        #create popup descriptions
+        popupIcon = "<strong>mammal</strong><br>Population"
+        if sum(centroids['country']==row.country) == 1:
+            lat = centroids.loc[centroids['country']==row.country]['lat']
+            lng = centroids.loc[centroids['country']==row.country]['lng']
+            folium.Marker([lat.values[0],lng.values[0]], tooltip=mammal, popup=popupIcon, icon=icon).add_to(my_map)
+
+    # Save to html
+    my_map.save('media/map_'+mammal+'.html')
+    
+    return my_map
+            
+mammal = 'tiger'    
+cnt_threshold = 10
+my_map = map_mammals(mammal, cnt_threshold=cnt_threshold, country_names=country_names, country_counts=country_counts) 
+my_map            
+```
+Let's check the results (click on a mammal):
 
 <a onclick="javascript: setMap('bat');" class="btn btn--inverse">Bat</a>
 <a onclick="javascript: setMap('capybara');" class="btn btn--inverse">Capybara</a>
