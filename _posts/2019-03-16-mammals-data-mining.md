@@ -32,6 +32,8 @@ sidebar:
     nav: sidebar-cool-mammals
 
 ---  
+
+[**GitHub page for this project**](https://github.com/luiztauffer/cool-mammals-data-mining/)
   
 In the [part 1]({{ site.url }}{{ site.baseurl }}//posts/2019-03-14-identifying-cool-mammals/) of this project, I described how to train a deep learning model to identify species of mammals present in a photo. This could be an useful functionality, for example, in the cellphone of wildlife enthusiasts. Now, how can we create a more complete application, one that goes beyond tracing boxes around the identified mammals and actually feeds back interesting information to the user?
 
@@ -67,7 +69,7 @@ df['countries_search'] = df['countries_search'].astype(object)
 #Search 100 Google results for each species
 for mammal in mammal_list:
     all_urls = []
-    results = search(mammal+" animal countries", num=50, stop=200, pause=60., 
+    results = search(mammal+" animal habitat", num=50, stop=200, pause=60., 
                      only_standard=True, user_agent=get_random_user_agent())
     [all_urls.append(i) for i in results]
             
