@@ -319,13 +319,6 @@ What's better than a nice graphic to tell a story, right? I'll tell you what: a 
 
 ```python
 import folium
-
-#Calculate centroids
-def centeroidnp(arr):
-    length = arr.shape[0]
-    sum_x = np.sum(arr[:, 0])
-    sum_y = np.sum(arr[:, 1])
-    return np.array([sum_y/length, sum_x/length])
     
 # function to generate map plots
 def map_mammals(mammal, cnt_threshold, country_names, country_counts): 
@@ -402,7 +395,7 @@ Let's check the results (click on a mammal):
 </iframe>
 <br>
 
-The cute mammal icons were taken from [Flaticon](https://www.flaticon.com/). And that's it! We finished the visualization for the unsupervised data mining stage of the project. If we look carefully, we will obeserve that the results are not 100% accurate, but most of the times they get pretty close to what we would expect to see in terms of species distributions by regions of the world. In the next part, we will create a web application that joins the object identification functionality from the last session to the data mining and visualization results of this session.
+The cute mammal icons were taken from [Flaticon](https://www.flaticon.com/), they get positioned at the calculated centroids for each country that hits the minimum threshold. And that's it! We finished the visualization for the unsupervised data mining stage of the project. If we look carefully, we will obeserve that the results are not 100% accurate, but most of the times they get pretty close to what we would expect to see in terms of species distributions by regions of the world. In the next part, we will create a web application that joins the object identification functionality from the last session to the data mining and visualization results of this session.
 
 **Tip:** Both Plotly and Folium make it easy to create beautiful visuals and export directly to html. After producing your superb `HTML` graphics and maps, [here's](https://wkhtmltopdf.org/) a great tool to render them as a vector `PDF`, if you need to use them as static figures. 
 
