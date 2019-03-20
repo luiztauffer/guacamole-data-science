@@ -29,7 +29,7 @@ sidebar:
 # The Cool Mammals Project
 This is a prototype project with the objective of summarizing, in a small space, the integrated use of diverse Machine Learning (ML) and Data Science (DS) methods. Good DS is usually seen as preceding good ML, which in its turn would be the end-point of anything we might need. However, this relationship could be more fruitful (in both practical and theoretical terms) if understood, instead, as an active cycle, with ML models also informing the construction and the interpretation of meaningful datasets. I try to illustrate what I mean with that with this cool mammals project.
 
-A first catalyst of this enterprise is my amazement with the abundance of high-quality, freely-available data, algorithms and documentation out there, which empower us to put so many ideas into practice! In nearly every DS or ML piece of expertise, from data gathering, manupulation and visualization to image and language processing, the cutting-edge technologies are made promptly accessible to anyone with interest in them. 
+A first catalyst of this enterprise is my amazement with the abundance of high-quality, freely-available data, algorithms and documentation out there, which empower us to put so many ideas into practice! In nearly every DS or ML piece of expertise, from data gathering, manipulation and visualization to image and language processing, the cutting-edge technologies are made promptly accessible to anyone with interest in them. 
 
 In the spirit of contributing to this evergrowing, beautiful culture, and as a deliberate effort of self organization, I aim to describe the evolution of the project and to catalog it in the currently proper mediums: data gathering and code writting (stored on GitHub), deploying models for inference and informative visualization (as a web application) and the documentation of each project part in an instructional format (blog posts).
 
@@ -65,7 +65,7 @@ A valuable concept touched in this section is the [Corpus-Based Knowledge Repres
 
 ## 3. Web application
 
-Finally, I demonstrate how to pack all those methods an a single web application built in [Django](https://www.djangoproject.com). I show how it can be served locally and made available to an external users with [Ngrok](https://ngrok.com).
+Finally, I demonstrate how to pack all those methods an a single web application built in [Django](https://www.djangoproject.com). I show how it can be served locally and made available to external users with [Ngrok](https://ngrok.com).
 
 
 ## 4. References and resources

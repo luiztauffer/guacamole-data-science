@@ -136,7 +136,7 @@ This should create one folder per mammal species, with one `TXT` file per web pa
 
 
 ## 2. Named Entity Recognition
-With the corpus at hand, we move on to extract meaningful information: the whereabouts of those mammals. Now, how to find countries names in this sea of texts? The simplest way to do so would be to sweep the whole article strings looking for exact matches with each existent country's name. Simple and possibly accurate... but boring and possibly slow! Instead, I decided to use the super cool [SpaCy](https://spacy.io) library available for python, it has many ready to use Natural Language Processing (NLP) funtionalities and works really fast.
+With the corpus at hand, we move on to extract meaningful information: the whereabouts of those mammals. Now, how to find countries names in this sea of texts? The simplest way to do so would be to sweep the whole article strings looking for exact matches with each existent country's name. Simple and possibly accurate... but boring and possibly slow! Instead, I decided to use the super cool [SpaCy](https://spacy.io) library available for python, it has many ready to use Natural Language Processing (NLP) functionalities and works really fast.
 
 To install Spacy, just do `pip install -U spacy`. You will also need to download the language [model](https://spacy.io/usage/models) to be used for inference, that's as simples as `python -m spacy download en`. I got the best results with the large model but, if it is excessively large for your application, you can use medium or small models.
 
@@ -413,7 +413,7 @@ Having your application indicating that giraffes live in Ecuador can be disappoi
 
 4. [Hippos in Colombia](https://www.vox.com/videos/2018/12/4/18125563/hippos-colombia-pablo-escobar), wtf?? Yes, they were brought in the 80s by Pablo Escobar for his personal zoo and now are roaming by the country.
 
-5. Sloths in India?? That's a typical result of our search for species being too uspecific. Sloth bears inhabits the southern Asia region and a more badasses than the Latin American sloths (like, [tiger-ass-kicking](https://www.youtube.com/watch?v=DV9ZGtQ8JZc) level badass)
+5. Sloths in India?? That's a typical result of our search for species being too unspecific. Sloth bears inhabits the southern Asia region and are more badasses than the Latin American sloths (like, [tiger-ass-kicking](https://www.youtube.com/watch?v=DV9ZGtQ8JZc) level badass)
 
 6. Australia scored significantly high in 15 of these 16 species! Or Australia has the most diverse zoos in the world, or it's definitely the weirdest fauna in the globe.
 
