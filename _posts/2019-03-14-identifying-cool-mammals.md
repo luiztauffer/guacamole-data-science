@@ -89,7 +89,7 @@ There are many good annotation tools available. Personally, I like to use [VOTT]
 We still have two steps ahead: 1) convert the `XML` annotations to a `CSV` file and 2) convert the `CSV` files to Tensorflow `RECORDS` files. A guide on how to organize the folders and files for this project can be found on the [GitHub page for this project](https://github.com/luiztauffer/cool-mammals-object-detection/), which is inspired by [this](https://pythonprogramming.net/creating-tfrecord-files-tensorflow-object-detection-api-tutorial/) video tutorial. Here's an illustration of the annotation tool and the initial organization of `JPG` and `XML` files:
 
 <figure>
-    <a href="{{ site.url }}{{ site.baseurl }}/assets/images/cool_mammals_project/part1/annotation.jpg"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/cool_mammals_project/part1/annotation.jpg" alt="" height="50"></a>
+    <a href="{{ site.url }}{{ site.baseurl }}/assets/images/cool_mammals_project/part1/annotation.JPG"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/cool_mammals_project/part1/annotation.JPG" alt="" height="50"></a>
     <figcaption>(left) Annotation example. (right) .jpg and .xml files organization.</figcaption>
 </figure>
 
