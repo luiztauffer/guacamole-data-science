@@ -57,3 +57,6 @@ sidebar-cool-mammals:
               url: /posts/2019-03-16-mammals-data-mining/#4-limitations-errors-and-what-i-learned-from-them
             - title: "5. References and resources"
               url: /posts/2019-03-16-mammals-data-mining/#5-references-and-resources
+              
+    - title: "part 3: web application"
+      url: /posts/2019-03-20-web-application
