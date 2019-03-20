@@ -13,11 +13,11 @@ tags:
     - data science
     
 header:
-  overlay_image: /assets/images/cool_mammals_project/header.jpg
+  overlay_image: /assets/images/cool_mammals_project/part0/header.jpg
   overlay_filter: 0.4
   caption: "Photo credit: [**Sebastian Molinares**](https://unsplash.com/@damebash)"
-  teaser: /assets/images/cool_mammals_project/header.jpg
-  og_image: /assets/images/cool_mammals_project/header.jpg
+  teaser: /assets/images/cool_mammals_project/part0/header.jpg
+  og_image: /assets/images/cool_mammals_project/part0/header.jpg
   
   
 sidebar:

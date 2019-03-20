@@ -21,10 +21,10 @@ tools:
     - Folium
     
 header:
-  overlay_image: /assets/images/data_mining_mammals/map_sloth.jpg
+  overlay_image: /assets/images/cool_mammals_project/part2/map_sloth.jpg
   overlay_filter: 0.4
-  teaser: /assets/images/data_mining_mammals/map_sloth.jpg
-  og_image: /assets/images/data_mining_mammals/map_sloth.jpg
+  teaser: /assets/images/cool_mammals_project/part2/map_sloth.jpg
+  og_image: /assets/images/cool_mammals_project/part2/map_sloth.jpg
   
   
 sidebar:
@@ -312,7 +312,7 @@ Let's check the results (click on a mammal):
 <a onclick="javascript: setGraph('wolf');" class="btn btn--inverse">Wolf</a>
 <a onclick="javascript: setGraph('zebra');" class="btn btn--inverse">Zebra</a>
 
-<iframe name="iframe_bar_graph0" width="100%" height="420px" frameborder="0" scrolling="yes" src="{{ site.url }}{{ site.baseurl }}/assets/images/data_mining_mammals/bar_graph_tiger.html">
+<iframe name="iframe_bar_graph0" width="100%" height="420px" frameborder="0" scrolling="yes" src="{{ site.url }}{{ site.baseurl }}/assets/images/cool_mammals_project/part2/bar_graph_tiger.html">
 </iframe>
 
 Since we scraped all the google search results indiscriminately, some spurious results will happen (e.g. tigers in Barbados), but they will most likely have low counts and a simple threshold (e.g. 10%) might be enough to get rid of most of this noise. 
@@ -393,7 +393,7 @@ Let's check the results (click on a mammal):
 <a onclick="javascript: setMap('wolf');" class="btn btn--inverse">Wolf</a>
 <a onclick="javascript: setMap('zebra');" class="btn btn--inverse">Zebra</a>
 
-<iframe name="iframe_map0" width="950px" height="420px" frameborder="0" scrolling="no" src="{{ site.url }}{{ site.baseurl }}/assets/images/data_mining_mammals/map_tiger.html">
+<iframe name="iframe_map0" width="950px" height="420px" frameborder="0" scrolling="no" src="{{ site.url }}{{ site.baseurl }}/assets/images/cool_mammals_project/part2/map_tiger.html">
 </iframe>
 <br>
 

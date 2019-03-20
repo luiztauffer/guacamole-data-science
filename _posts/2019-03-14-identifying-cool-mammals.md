@@ -18,11 +18,11 @@ tools:
     - OpenCV
     
 header:
-  overlay_image: /assets/images/identify_mammals/header.jpg
+  overlay_image: /assets/images/cool_mammals_project/part1/header.jpg
   overlay_filter: 0.1
   caption: "Photo credit: [**Shannon Litt**](https://unsplash.com/@shannonlitt)"
-  teaser: /assets/images/identify_mammals/header.jpg
-  og_image: /assets/images/identify_mammals/header.jpg
+  teaser: /assets/images/cool_mammals_project/part1/header.jpg
+  og_image: /assets/images/cool_mammals_project/part1/header.jpg
   
   
 sidebar:
@@ -68,8 +68,8 @@ The next step is cloning the git repository for TensorFlow models, installing an
 Once all modules are successfully installed, let’s play with the `object_detection_tutorial.ipynb` on Jupyter notebook and check how the pre-trained model performs on pictures of mammals we’re interested in. This tutorial is found at `models/research/object_detection`, inside the cloned TensorFlow models repository. You can add any `JPG` photos you want to the `test_images\` folder for inference and also try it with any pre-trained models form the [Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md).  
 
 <figure class="half">
-    <a href="{{ site.url }}{{ site.baseurl }}/assets/images/identify_mammals/img_bat_1.jpg"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/identify_mammals/img_bat_1.jpg"></a>
-    <a href="{{ site.url }}{{ site.baseurl }}/assets/images/identify_mammals/img_capybara_1.jpg"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/identify_mammals/img_capybara_1.jpg"></a>
+    <a href="{{ site.url }}{{ site.baseurl }}/assets/images/cool_mammals_project/part1/img_bat_1.jpg"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/cool_mammals_project/part1/img_bat_1.jpg"></a>
+    <a href="{{ site.url }}{{ site.baseurl }}/assets/images/cool_mammals_project/part1/img_capybara_1.jpg"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/cool_mammals_project/part1/img_capybara_1.jpg"></a>
     <figcaption>For a rainy Halloween, perhaps?</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ Oh ohh! Capybaras are classified as bears, which couldn’t be farther form the 
 A list of 16 cool mammals was chosen to form the training set. Of course this is not an extensive account of all known mammal species and the ones lacking in the list will probably be classified as a similar another, e.g. porcupines (not in the trained set) will likely be classified as a hedgehogs (present in the trained set! Also, check this fantastic [russian animation](https://www.youtube.com/watch?v=oW0jvJC2rvM) from 1975). For each of the 16 chosen species, we perform a google images search (make sure to filter for only JPG and minimum size of 240x240) and use the [Fatkun Batch Download Image](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en) chrome extension to download 100 examples for training and 10 examples for testing.
 
 <figure>
-    <a href="{{ site.url }}{{ site.baseurl }}/assets/images/identify_mammals/all_mammals.png"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/identify_mammals/all_mammals.png" alt="" height="50"></a>
+    <a href="{{ site.url }}{{ site.baseurl }}/assets/images/cool_mammals_project/part1/all_mammals.png"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/cool_mammals_project/part1/all_mammals.png" alt="" height="50"></a>
     <figcaption>Some of the coolest mammals ever! Wonder if I can teach a robot to identify them...</figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ There are many good annotation tools available. Personally, I like to use [VOTT]
 We still have two steps ahead: 1) convert the `XML` annotations to a `CSV` file and 2) convert the `CSV` files to Tensorflow `RECORDS` files. A guide on how to organize the folders and files for this project can be found on the [GitHub page for this project](https://github.com/luiztauffer/cool-mammals-object-detection/), which is inspired by [this](https://pythonprogramming.net/creating-tfrecord-files-tensorflow-object-detection-api-tutorial/) video tutorial. Here's an illustration of the annotation tool and the initial organization of `JPG` and `XML` files:
 
 <figure>
-    <a href="{{ site.url }}{{ site.baseurl }}/assets/images/identify_mammals/annotation.jpg"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/identify_mammals/annotation.jpg" alt="" height="50"></a>
+    <a href="{{ site.url }}{{ site.baseurl }}/assets/images/cool_mammals_project/part1/annotation.jpg"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/cool_mammals_project/part1/annotation.jpg" alt="" height="50"></a>
     <figcaption>(left) Annotation example. (right) .jpg and .xml files organization.</figcaption>
 </figure>
 
@@ -157,15 +157,15 @@ Ta-da! Habemus model! Check the newly created subfolder `trained-inference-graph
 Now let’s copy the `object_detection_tutorial.ipynb`, the notebook we used before, to your project’s main folder and modify it to use our newly trained model. Just change the `PATH_TO_FROZEN_GRAPH`, `PATH_TO_LABELS` and `PATH_TO_TEST_IMAGES_DIR` to match the paths of, respectively, the newly exported model, the new classes `PBTXT` file and your test images (**NOT** the training ones). Let’s check how it performs:
 
 <figure class="half">
-    <a href="{{ site.url }}{{ site.baseurl }}/assets/images/identify_mammals/img_bat_2.jpg"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/identify_mammals/img_bat_2.jpg"></a>
-    <a href="{{ site.url }}{{ site.baseurl }}/assets/images/identify_mammals/img_capybara_2.jpg"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/identify_mammals/img_capybara_2.jpg"></a>
+    <a href="{{ site.url }}{{ site.baseurl }}/assets/images/cool_mammals_project/part1/img_bat_2.jpg"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/cool_mammals_project/part1/img_bat_2.jpg"></a>
+    <a href="{{ site.url }}{{ site.baseurl }}/assets/images/cool_mammals_project/part1/img_capybara_2.jpg"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/cool_mammals_project/part1/img_capybara_2.jpg"></a>
     <figcaption>Success!</figcaption>
 </figure>
 
 Success! No risk of our nature-explorer robot to miss out bats or capyabaras anymore! The fine-tuned SSD Inception achieved over 85% accuracy in my test dataset, which sounds good! However, as important as knowing where we're good at, is to know where we fail. An immediate limitation is the small range of mammals that we trained the model to recognize. Here's an example of an EPIC fail:
 
 <figure>
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/identify_mammals/img_bears.jpg" />
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/cool_mammals_project/part1/img_bears.jpg" />
     <figcaption>Whatch out for those fake capybaras!</figcaption>
 </figure>
 
