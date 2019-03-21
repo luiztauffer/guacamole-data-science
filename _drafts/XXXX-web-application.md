@@ -31,6 +31,8 @@ If you say the words "web development and python", you're basically saying [Djan
 ## Getting started with Django
 To install Django, just run `pip install django` and verify the installation with `django-admin --version`. Now let's create a Django project with `django-admin startproject your_project_name`. This should create a folder with your project's name and some files that contitute the initial basis for our application.
 
+Django breaks down all functionalities of the project (e.g. a website) into apps (e.g. forums, user profile, blog).
+
 
 
 Creating an app
