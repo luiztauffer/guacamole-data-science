@@ -18,7 +18,7 @@ author:
   home: "about"
   avatar: /assets/images/bio-photo.jpg
   bio: "On a quest for the perfect guacamole..."
-  location : "Stockholm, SE"     
+  location : "Stockholm, SE"
   links:
      - label: "GitHub"
        icon: "fab fa-fw fa-github"
@@ -31,9 +31,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   Data science, machine learning and guacamole.
 
 # the subpath of your site, e.g. /blog
-baseurl: "/guacamole-data-science" 
+baseurl: "/guacamole-data-science"
 # the base hostname & protocol for your site, e.g. http://example.com
-url: "https://luiztauffer.github.io" 
+url: "https://luiztauffer.github.io"
 
 #github_username:  luiztauffer
 repository: "luiztauffer/guacamole-data-science"
@@ -56,7 +56,7 @@ collections:
   posts:
     output: true
     permalink: /:collection/:path/
-    
+
 defaults:
   # _posts
   - scope:
@@ -107,16 +107,16 @@ category_archive:
 
 include:
   - _pages
-  
-  
+
+
 # Google Analytics
 #analytics:
 #  provider: "google-gtag"
 #  google:
 #    tracking_id: "UA—136449513-1"
 #    anonymize_ip: false # default
-  
-  
+
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
